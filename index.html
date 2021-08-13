@@ -461,15 +461,19 @@
         <!-- form -->
         <div class="footer__form">
           <p>Подпишитесь на рассылку</p>
-          <form action="#" class="form">
-            <input type="text" name="subscribe" id="subscribe" class="form__item">
-            <label for="subscribe">E-mail</label>
-            <button type="button" class="form__btn">
-              Подписаться
-              <!-- <svg width="24" heigth="24">
-                <use href="./img/sprites2.svg#icon-plane"></use>
-              </svg> -->
-            </button>
+          <form action="#" class="form-footer">
+            <div class="form-footer__field">
+              <input type="mail" name="subscribe" id="subscribe" class="form-footer__input">
+              <label for="subscribe">E-mail</label>
+            </div>
+            <div class="form__fild">
+              <button type="button" class="form-footer__btn btn">
+                <span>Подписаться</span>
+                <svg width="24" height="24" class="send">
+                  <use href="./img/sprites2.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -481,6 +485,26 @@
     <div data-modal class="bakdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="close"></button>
+        <strong>Оставьте свои данные, мы вам перезвоним</strong>
+        <form action="#" class="form-modal">
+          <label for="text" class="form-modal__label">Имя</label>
+          <input type="text" class="form-modal__input" name="name" id="text">
+
+          <label for="tel" class="form-modal__label">Телефон</label>
+          <input type="tel" class="form-modal__input" name="phone" id="tel">
+
+          <label for="mail" class="form-modal__label">Почта</label>
+          <input type="mail" class="form-modal__input" name="Email" id="mail">
+
+          <label for="textarea" class="form-modal__label">Комментарий</label>
+          <textarea type="textarea" class="form-modal__text" id="textarea"></textarea>
+
+          <div class="form-modal__field">
+            <input type="checkbox" class="form-modal__checkbox" id="checkbox">
+            <label for="checkbox" class="form-modal__label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+          </div>
+
+          <button type="button" class="form-modal__btn">Отправить</button></form>
       </div>
     </div>
     <!-- /modal window -->
