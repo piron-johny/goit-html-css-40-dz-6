@@ -788,6 +788,29 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
+  padding-left: 42px;
+  transition: border-color .25s linear,
+  outline 0.25s linear;
+}
+.form-modal__input:focus-visible + svg {
+  fill:var(--activeColor);
+}
+.form-modal__input:focus-visible,
+.form-modal__text:focus-visible {
+  border-color: var(--activeColor);
+  outline: var(--activeColor);
+}
+.form-wrapper {
+  position: relative;
+}
+.icon-name,
+.icon-phone,
+.icon-mail {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill 0.25s linear;
 }
 .form-modal__text {
   width: 100%;
@@ -796,6 +819,7 @@ img {
   border-radius: 4px;
   resize: none;
   margin-bottom: 20px;
+  transition: border-color 0.25s linear;
 }
 .form-modal__field {
   position: relative;
@@ -821,6 +845,7 @@ img {
   width: 16px;
   height: 15px;
   background-image: url(../img/bd-check.svg);
+  transition: background-image .25s linear;
 }
 .form-modal__field .form-modal__label a {
   color: var(--activeColor);

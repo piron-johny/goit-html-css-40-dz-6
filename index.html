@@ -488,13 +488,28 @@
         <strong>Оставьте свои данные, мы вам перезвоним</strong>
         <form action="#" class="form-modal">
           <label for="text" class="form-modal__label">Имя</label>
-          <input type="text" class="form-modal__input" name="name" id="text">
+          <div class="form-wrapper">
+            <input type="text" class="form-modal__input" name="name" id="text">
+            <svg width="12" height="12" class="icon-name">
+              <use href="./img/sprites2.svg#icon-name"></use>
+            </svg>
+          </div>
 
           <label for="tel" class="form-modal__label">Телефон</label>
-          <input type="tel" class="form-modal__input" name="phone" id="tel">
+          <div class="form-wrapper">
+            <input type="tel" class="form-modal__input" name="phone" id="tel">
+            <svg width="13" height="13" class="icon-phone">
+              <use href="./img/sprites2.svg#icon-phone"></use>
+            </svg>
+          </div>
 
           <label for="mail" class="form-modal__label">Почта</label>
-          <input type="mail" class="form-modal__input" name="Email" id="mail">
+          <div class="form-wrapper">
+            <input type="mail" class="form-modal__input" name="Email" id="mail">
+            <svg width="15" height="12" class="icon-mail">
+              <use href="./img/sprites2.svg#icon-mail"></use>
+            </svg>
+          </div>
 
           <label for="textarea" class="form-modal__label">Комментарий</label>
           <textarea type="textarea" class="form-modal__text" id="textarea"></textarea>
