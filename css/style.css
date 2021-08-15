@@ -750,7 +750,7 @@ img {
   height: 1px;
   width: 13px;
   background: #000;
-  transition: transform 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close::after {
   transform: rotate(-45deg);
@@ -790,8 +790,8 @@ img {
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
-  transition: border-color .25s linear,
-  outline 0.25s linear;
+  transition: border-color .25s cubic-bezier(0.4, 0, 0.2, 1),
+  outline 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__input:focus-visible + svg {
   fill:var(--activeColor);
@@ -811,7 +811,7 @@ img {
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  transition: fill 0.25s linear;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__text {
   width: 100%;
@@ -820,7 +820,7 @@ img {
   border-radius: 4px;
   resize: none;
   margin-bottom: 20px;
-  transition: border-color 0.25s linear;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__field {
   position: relative;
@@ -846,7 +846,7 @@ img {
   width: 16px;
   height: 15px;
   background-image: url(../img/bd-check.svg);
-  transition: background-image .25s linear;
+  transition: background-image .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__field .form-modal__label a {
   color: var(--activeColor);
