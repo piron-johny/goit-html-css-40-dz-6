@@ -58,7 +58,7 @@
               <h1 class="first-screen__title">
                 Эффективные решения для вашего бизнеса
               </h1>
-              <button data-modal-open type="button" class="first-screen__btn btn btn-active">
+              <button data-modal-open type="button" class="first-screen__btn btn">
                 Заказать услугу
               </button>
             </div>
@@ -463,7 +463,7 @@
           <p>Подпишитесь на рассылку</p>
           <form action="#" class="form-footer">
             <div class="form-footer__field">
-              <input type="mail" name="subscribe" id="subscribe" class="form-footer__input">
+              <input type="email" name="subscribe" placeholder="E-mail" id="subscribe" class="form-footer__input">
               <label for="subscribe">E-mail</label>
             </div>
             <div class="form__fild">
@@ -487,39 +487,42 @@
         <button data-modal-close type="button" class="close"></button>
         <strong>Оставьте свои данные, мы вам перезвоним</strong>
         <form action="#" class="form-modal">
-          <label for="text" class="form-modal__label">Имя</label>
-          <div class="form-wrapper">
+          <label class="form-modal__label">
+            <span>Имя</span>
             <input type="text" class="form-modal__input" name="name" id="text">
             <svg width="12" height="12" class="icon-name">
               <use href="./img/sprites2.svg#icon-name"></use>
             </svg>
-          </div>
+          </label>
 
-          <label for="tel" class="form-modal__label">Телефон</label>
-          <div class="form-wrapper">
+
+          <label class="form-modal__label">
+            <span>Телефон</span>
             <input type="tel" class="form-modal__input" name="phone" id="tel">
             <svg width="13" height="13" class="icon-phone">
               <use href="./img/sprites2.svg#icon-phone"></use>
             </svg>
-          </div>
+          </label>
 
-          <label for="mail" class="form-modal__label">Почта</label>
-          <div class="form-wrapper">
-            <input type="mail" class="form-modal__input" name="Email" id="mail">
+          <label for="mail" class="form-modal__label">
+            <span>Почта</span>
+            <input type="email" class="form-modal__input" name="Email" id="mail">
             <svg width="15" height="12" class="icon-mail">
               <use href="./img/sprites2.svg#icon-mail"></use>
             </svg>
-          </div>
+          </label>
 
-          <label for="textarea" class="form-modal__label">Комментарий</label>
-          <textarea type="textarea" class="form-modal__text" id="textarea" name="mesSage" placeholder="Введите текст"></textarea>
+          <label for="textarea" class="form-modal__label">
+            <span>Комментарий</span>
+            <textarea class="form-modal__text" id="textarea" name="mesSage" placeholder="Введите текст"></textarea>
+          </label>
 
           <div class="form-modal__field">
             <input type="checkbox" class="form-modal__checkbox" id="checkbox">
             <label for="checkbox" class="form-modal__label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
           </div>
 
-          <button type="submit" class="form-modal__btn">Отправить</button></form>
+          <button type="submit" class="form-modal__btn btn">Отправить</button></form>
       </div>
     </div>
     <!-- /modal window -->
